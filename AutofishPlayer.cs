@@ -26,7 +26,7 @@ namespace Autofish
             Item item = inventory[slot];
             foreach (GlobalItem itemGlobal in item.Globals) {
                 if (itemGlobal is ClickFishingItem clickFishingItem) {
-                    clickFishingItem.ClickItem();
+                    clickFishingItem.ClickItem(item);
                 }
             }
             return false;
